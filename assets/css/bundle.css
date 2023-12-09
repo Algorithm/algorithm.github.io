@@ -34,10 +34,10 @@ body,html,sub,sup{
     content:""
 }
 .h-hero__title h1{
-    font-size:11em
+    font-size:9em
 }
 .p-hero h1{
-    font-size:8.068em
+    font-size:7em
 }
 .cta h3,.p-next__link,.project .project__title{
     font-size:5.37em;
@@ -45,7 +45,7 @@ body,html,sub,sup{
     letter-spacing:-.03em
 }
 .legal h1,.p-hero__year,.p-info h2,.process__title h2,.project .project__year,.services__header h2,.services__item span{
-    font-size:3.58em;
+    font-size:2em;
     line-height:1.1;
     letter-spacing:-.02em
 }
@@ -767,7 +767,7 @@ header .nav__next{
     max-width:48em
 }
 .h-hero__text p{
-    font-size:2.7em;
+    font-size:2.2em;
     line-height:1.4;
     margin-bottom:1em
 }
