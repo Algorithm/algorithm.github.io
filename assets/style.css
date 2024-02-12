@@ -11,7 +11,7 @@ body {
     text-wrap: balance;
     line-height: 1.8;
     min-height: 100dvh;
-    font-size: var(--lx-text-01);
+    font-size: 1.1em;
 }
 
 a {
@@ -123,12 +123,6 @@ a {
     animation: blink-animation 1s step-end infinite;
 }
 
-@supports(font-size: clamp(1rem, 1vw, 1rem)) {
-    :root {
-        --lx-text-01: clamp(1.1rem);
-    }
-}
-
 p,
 
 .algo-container-algorithm {
@@ -145,7 +139,6 @@ p,
 }
 
 @media screen and (max-width: 80rem) {
-
     img {
         display: none;
     }
