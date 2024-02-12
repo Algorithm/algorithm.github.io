@@ -1,0 +1,173 @@
+body {
+    display: flex;
+    align-items: center;
+    font-family: "JetBrains Mono", sans-serif;
+    cursor: crosshair;
+    color: #ffffe6;
+    background-color: #10100e;
+}
+
+a {
+    text-decoration: underline;
+    color: #ffffe6;
+}
+
+.overlay {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+}
+
+.overlay:before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    display: block;
+    pointer-events: none;
+    background-image: linear-gradient(rgba(16, 16, 16, 0.25) 50%, rgba(16, 16, 16, 0.1) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.015), rgba(0, 255, 0, 0.01), rgba(0, 0, 255, 0.015));
+    background-size: 100% 0.1875rem, 0.375rem 100%;
+    z-index: 2;
+}
+
+.overlay:after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    display: block;
+    pointer-events: none;
+    background-color: rgba(16, 16, 16, 0.2);
+    animation: flicker 0.3s infinite;
+    z-index: 2;
+}
+
+@keyframes flicker {
+    0% {
+        opacity: 0.15795;
+    }
+    5% {
+        opacity: 0.31511;
+    }
+    10% {
+        opacity: 0.94554;
+    }
+    15% {
+        opacity: 0.2469;
+    }
+    20% {
+        opacity: 0.62031;
+    }
+    25% {
+        opacity: 0.0293;
+    }
+    30% {
+        opacity: 0.00899;
+    }
+    35% {
+        opacity: 0.5344;
+    }
+    40% {
+        opacity: 0.12778;
+    }
+    45% {
+        opacity: 0.52042;
+    }
+    50% {
+        opacity: 0.3823;
+    }
+    55% {
+        opacity: 0.2198;
+    }
+    60% {
+        opacity: 0.9383;
+    }
+    65% {
+        opacity: 0.86615;
+    }
+    70% {
+        opacity: 0.68695;
+    }
+    75% {
+        opacity: 0.55749;
+    }
+    80% {
+        opacity: 0.96984;
+    }
+    85% {
+        opacity: 0.0361;
+    }
+    90% {
+        opacity: 0.24467;
+    }
+    95% {
+        opacity: 0.08351;
+    }
+    100% {
+        opacity: 0.54813;
+    }
+}
+
+@keyframes blink-animation {
+    50% {
+        opacity: 0;
+    }
+}
+
+.cursor-blink {
+    animation: blink-animation 1s step-end infinite;
+}
+
+@supports(font-size: clamp(1rem, 1vw, 1rem)) {
+    :root {
+        --lx-text-01: clamp(1.02rem, 0.21vw + 1.02rem, 0.88rem);
+    }
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    word-break: break-word;
+    text-wrap: balance;
+    line-height: 1.8;
+    min-height: 100dvh;
+    font-size: var(--lx-text-01);
+}
+
+p,
+
+.algo-container-algorithm {
+    margin: 0 auto;
+}
+
+.algo-row {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: var(--lx-gap);
+}
+
+@media screen and (max-width: 80rem) {
+
+    img {
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
