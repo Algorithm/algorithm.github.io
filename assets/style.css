@@ -19,14 +19,6 @@ a {
     color: #ffffe6;
 }
 
-@viewport {
-    width: device-width; /* Sets the width of the viewport to the device width */
-    initial-scale: 1; /* Sets the initial scale to 1 (no zoom) */
-    minimum-scale: 1; /* Sets the minimum scale to 1 (no zooming out) */
-    maximum-scale: 1; /* Sets the maximum scale to 1 (no zooming in) */
-    user-scalable: no; /* Disables user zooming */
-}
-
 .overlay {
     position: fixed;
     inset: 0;
@@ -159,6 +151,11 @@ p,
     }
 }
 
+@media screen and (max-width: 480px) {
+    body {
+        padding: 0;
+    }
+}
 
 
 
