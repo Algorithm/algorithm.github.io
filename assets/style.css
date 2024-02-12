@@ -118,7 +118,7 @@ a {
 
 @supports(font-size: clamp(1rem, 1vw, 1rem)) {
     :root {
-        --lx-text-01: clamp(1.02rem, 0.21vw + 1.02rem, 0.88rem);
+        --lx-text-01: clamp(1.01rem, 2vw, 1.2rem);
     }
 }
 
@@ -130,6 +130,13 @@ body {
     line-height: 1.8;
     min-height: 100dvh;
     font-size: var(--lx-text-01);
+}
+
+@media screen and (max-width: 480px) {
+    body {
+        padding-left: 10px; /* Adjust as needed */
+        padding-right: 10px; /* Adjust as needed */
+    }
 }
 
 p,
