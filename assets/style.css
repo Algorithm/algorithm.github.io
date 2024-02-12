@@ -11,7 +11,7 @@ body {
     text-wrap: balance;
     line-height: 1.8;
     min-height: 100dvh;
-    font-size: 1.1em;
+    font-size: 18px;
 }
 
 a {
@@ -146,7 +146,7 @@ p,
 
 @media screen and (max-width: 480px) {
     body {
-         font-size: 5.0em;
+         font-size: 40px;
     }
 }
 
