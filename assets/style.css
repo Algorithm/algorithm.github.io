@@ -5,6 +5,13 @@ body {
     cursor: crosshair;
     color: #ffffe6;
     background-color: #10100e;
+    margin: 0;
+    padding: 0;
+    word-break: break-word;
+    text-wrap: balance;
+    line-height: 1.8;
+    min-height: 100dvh;
+    font-size: var(--lx-text-01);
 }
 
 a {
@@ -122,20 +129,11 @@ a {
     }
 }
 
-body {
-    margin: 0;
-    padding: 0;
-    word-break: break-word;
-    text-wrap: balance;
-    line-height: 1.8;
-    min-height: 100dvh;
-    font-size: var(--lx-text-01);
-}
-
 @media screen and (max-width: 480px) {
     body {
-        padding-left: 10px; /* Adjust as needed */
-        padding-right: 10px; /* Adjust as needed */
+        padding-left: 10px;
+        padding-right: 10px;
+        font-weight: 400;
     }
 }
 
