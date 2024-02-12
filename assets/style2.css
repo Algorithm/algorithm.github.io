@@ -88,9 +88,6 @@ hr{
     border:none
 }
 .lx-container-algorithm{
-    width:100%;
-    max-width:100rem;
-    min-width:18rem;
     margin: 0 auto;
 }
 .lx-row{
@@ -159,9 +156,6 @@ hr{
     flex:none
 }
 @media screen and (max-width: 80rem) {
-    .lx-container-algorithm {
-        max-width: 38.4rem;
-    }
     .lx-row {
         flex-direction: column;
     }
