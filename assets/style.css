@@ -125,13 +125,7 @@ a {
 
 @supports(font-size: clamp(1rem, 1vw, 1rem)) {
     :root {
-        --lx-text-01: clamp(1.01rem, 2vw, 1.2rem);
-    }
-}
-
-@media screen and (max-width: 480px) {
-    body {
-        font-size: 1.5px;
+        --lx-text-01: clamp(1.1rem);
     }
 }
 
