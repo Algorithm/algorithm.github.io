@@ -23,6 +23,7 @@ a {
     position: fixed;
     inset: 0;
     pointer-events: none;
+    display: none;
 }
 
 .overlay:before {
