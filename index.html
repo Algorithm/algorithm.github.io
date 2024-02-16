@@ -15,9 +15,25 @@
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="theme-color" content="#ffffff">
 
+<script>
+
+document.addEventListener('DOMContentLoaded', function() {
+  const overlayToggle = document.getElementById('overlay-toggle');
+  const overlay = document.querySelector('.overlay');
+
+  overlayToggle.addEventListener('change', function() {
+    if (this.checked) {
+      overlay.style.display = 'none';
+    } else {
+      overlay.style.display = 'block';
+    }
+  });
+});
+
+</script>
+
 <!--
-                                                                                          
-                        .;::::::::;.                                            
+                                                                                                                                    
                       .dXWMMMMMMMMWXd.                                          
                      'OWMNkooooookNMWO'                                         
                     ;0MMK:        :KMMK;                                        
@@ -34,8 +50,7 @@
        cXMW0;:KMMK:;0MMXl         .lXMW0;:KMMK:;0WMXc                           
        ,d0x,lXMWO;:KMMK;            :KMMK:;OWMXl,x0d,                           
          . 'xNWk,lXMWO,              ,0WMXl,kWNx' .                             
-             ';.lNMWx.                .kWMNl.;'                                 
-                .:dl.                  .ld:.                                    
+             ';.lNMWx.                .kWMNl.;'                                                                    
                                                                                                              
 -->
 
@@ -60,8 +75,13 @@
     </div>
   </div>
 
+<label class="form-switch" for="overlay-toggle">
+  <input type="checkbox" id="overlay-toggle">
+  <i></i>
+</label>
+
 </main>
 <div class="overlay"></div>
- 
+
 </body>
 </html>
