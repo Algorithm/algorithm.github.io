@@ -23,9 +23,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
   overlayToggle.addEventListener('change', function() {
     if (this.checked) {
-      overlay.style.display = 'none';
+      overlay.style.display = 'block'; // Show overlay when checked
     } else {
-      overlay.style.display = 'block';
+      overlay.style.display = 'none'; // Hide overlay when unchecked
     }
   });
 });
