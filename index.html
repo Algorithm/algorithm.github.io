@@ -24,13 +24,18 @@ document.addEventListener('DOMContentLoaded', function() {
   overlayToggle.addEventListener('change', function() {
     if (this.checked) {
       overlay.style.display = 'block'; // Show overlay when checked
+      audio.play(); // Play the audio
     } else {
       overlay.style.display = 'none'; // Hide overlay when unchecked
+      audio.pause(); // Pause the audio
     }
   });
 });
 
 </script>
+
+<!-- Embedding the MP3 file -->
+<audio id="audio" src="./assets/audio/terminal_sounds.mp3"></audio>
 
 <!--
                                                                                                                                     
