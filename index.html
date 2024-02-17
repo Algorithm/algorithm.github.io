@@ -24,9 +24,11 @@ document.addEventListener('DOMContentLoaded', function() {
   overlayToggle.addEventListener('change', function() {
     if (this.checked) {
       overlay.style.display = 'block'; // Show overlay when checked
+      audio.volume = 0.2; // Set volume to 20%
       audio.play(); // Play the audio
     } else {
       overlay.style.display = 'none'; // Hide overlay when unchecked
+      audio.volume = 0.2; // Set volume to 20%
       audio.pause(); // Pause the audio
     }
   });
